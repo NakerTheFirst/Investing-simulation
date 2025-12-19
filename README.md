@@ -79,16 +79,15 @@ Key observations:
 - Stochastic exploration: Samples from wider distribution, leading to both massive gains and bankruptcies
 
 ## Comparison with Baselines
-|         Strategy         | Median Capital | Bankruptcies |
-|------------|-------------|----------------|--------------|
-| Fixed 20% (Kelly)        |     ~$750      |      0%      |
-| RL Agent (Deterministic) |      $698      |      0%      |
-| RL Agent (Stochastic)    |       $0       |      57%     |
+| Strategy | Median Capital | Bankruptcies |
+|:--------:|:--------------:|:------------:|
+| Fixed 20% (Kelly) | ~$750 | 0% |
+| RL Agent (Deterministic) | $698 | 0% |
+| RL Agent (Stochastic) | $0 | 57% |
 
 The RL agent's deterministic policy performs comparably to the Kelly Criterion while learning purely from experience, validating the approach.
 
 ## Technical Details
-
 Environment:
 - Custom Gymnasium environment
 - Observation space: [normalized capital, normalized round]
@@ -121,4 +120,4 @@ action, _ = model.predict(obs, deterministic=True)
 
 
 ---
-*Built with Python, Gymnasium, Stable-Baselines3, and lots, like l o t s, of trial and error.*
+*Built with Python, Gymnasium, Stable-Baselines3, and lots, like l-o-t-s, of trial and error.*
