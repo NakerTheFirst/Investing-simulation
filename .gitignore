@@ -205,7 +205,4 @@ __marimo__/
 .streamlit/secrets.toml
 
 # ------------------------------------------------------
-logs/
 post.md
-ppo_investment_agent_11-12_21-09.zip
-ppo_investment_agent_11-12_21-49.zip
